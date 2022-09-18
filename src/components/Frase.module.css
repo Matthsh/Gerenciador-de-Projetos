@@ -1,0 +1,15 @@
+.fraseCountainer {
+    background-color: #333;
+    border: 1px solid #111;
+}
+
+.fraseContent {
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+}
+
+.fraseContent:hover{
+    color: red;
+    background-color: white;
+}
