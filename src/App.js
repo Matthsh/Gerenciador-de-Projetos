@@ -1,8 +1,11 @@
 import './App.css'
-import HelloWorld from './components/HelloWorld'
-import SayMyName from './components/SayMyName'
-import Pessoa from './components/Pessoa'
-import Frase from './components/Frase'
+//import HelloWorld from './components/HelloWorld'
+//import SayMyName from './components/SayMyName'
+//import Pessoa from './components/Pessoa'
+//import Frase from './components/Frase'
+//import List from './components/List'
+import Evento from './components/Evento'
+import Form from './components/Form'
 
 function App() {
 
@@ -18,7 +21,7 @@ function App() {
   const url = 'https://via.placeholder.com/150'
   */
 
-  const nome = 'Maria'
+  // const nome = 'Maria' //-> aula 6
 
   return (
     /* AULA DE INTRODUÇÃO AO REACT
@@ -33,15 +36,22 @@ function App() {
     </div>
     */
 
-   <div className="App">
+    /* Até a aula 6
+    <div className="App">
     <h1>Testando CSS</h1>
     <Frase />
     <SayMyName nome="Mattheus" />
     <SayMyName nome="João" />
     <SayMyName nome={nome} />
     <Pessoa foto="https://via.placeholder.com/150" nome="Mattheus" idade="27" profissao="Cientista" />
-   </div>
-    
+    </div>*/
+
+
+    //<List /> // aula 7 e 8
+    <div className="App">
+      <Evento numero="1" />
+      <Form />
+    </div>
 
   )
 }
