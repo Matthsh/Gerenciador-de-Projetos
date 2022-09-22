@@ -4,8 +4,9 @@ import './App.css'
 //import Pessoa from './components/Pessoa'
 //import Frase from './components/Frase'
 //import List from './components/List'
-import Evento from './components/Evento'
-import Form from './components/Form'
+//import Evento from './components/Evento'
+//import Form from './components/Form'
+import Condicional from './components/Condicional'
 
 function App() {
 
@@ -48,9 +49,17 @@ function App() {
 
 
     //<List /> // aula 7 e 8
+    /*
     <div className="App">
-      <Evento numero="1" />
+      <Evento />
       <Form />
+    </div>
+    */
+
+    // Aula 12
+    <div className="App">
+      <h1>Renderização Condicional</h1>
+      <Condicional />
     </div>
 
   )
