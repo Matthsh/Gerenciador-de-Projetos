@@ -6,7 +6,11 @@ import './App.css'
 //import List from './components/List'
 //import Evento from './components/Evento'
 //import Form from './components/Form'
-import Condicional from './components/Condicional'
+//import Condicional from './components/Condicional'
+//import OutraLista from './components/listas/OutraLista'
+import {useState} from 'react'
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
 
@@ -24,7 +28,7 @@ function App() {
 
   // const nome = 'Maria' //-> aula 6
 
-  return (
+  
     /* AULA DE INTRODUÇÃO AO REACT
     <div className="App">
       <h2>Alterando o JSX</h2>
@@ -57,11 +61,34 @@ function App() {
     */
 
     // Aula 12
+    /**
     <div className="App">
       <h1>Renderização Condicional</h1>
       <Condicional />
     </div>
+    */
 
+    // Aula 13 Renderização de listas
+    /** 
+    const meusItems = ['React', 'Vue', 'Angular']
+
+    return (
+
+    <div className="App">
+      <h1>Renderização de Listas</h1>
+      <OutraLista items={meusItems} />
+    </div>
+  )
+  */
+
+  // Aula 14 // => State Lift
+  const [nome, setNome] = useState()
+
+  return (
+    <div className="App">
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome}/>
+    </div>
   )
 }
 
